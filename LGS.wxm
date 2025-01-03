@@ -1,0 +1,21 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: input   start ] */
+ t(x):=1/2*x-4$
+
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+xy:makelist([x,t(x)],x,-4,4);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+wxplot2d([t(x), [discrete,xy]], [x,-4,4],[y,-8,2],[style, [lines,1,1],[points,2,2,2]],[gnuplot_preamble, "set zeroaxis"])$
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$
